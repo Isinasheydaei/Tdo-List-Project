@@ -1,0 +1,212 @@
+/*reset style  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* VAREBELS  */
+:root {
+  --primeycoler: #6d28d9;
+  --secondarycolor: #ede9fe;
+  --mainwhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodycolor: #f6f6f6;
+}
+
+body {
+  background-color: var(--bodycolor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -----------start nav section ---------- */
+.nav-main {
+  width: 100%;
+  background-color: var(--primeycoler);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-homebar {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+}
+.nav-homebar i {
+  color: var(--mainwhite);
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.nav-userbar {
+  color: var(--mainwhite);
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.nav-contener {
+  /* max-width: 1140px; */
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .nav-homebar i {
+    padding: 0.85rem;
+    font-size: 0.85rem;
+  }
+  .nav-userbar {
+    padding: 0.85rem;
+    font-size: 0.85rem;
+  }
+}
+/* ----------- end nav section ---------- */
+
+.meain-container {
+  margin: 1rem;
+}
+.main-Title {
+  font-size: 2.5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-container {
+  display: flex;
+}
+.todo-container {
+  width: 25rem;
+}
+@media screen and (max-width: 768px) {
+  .todo-container {
+    width: 15rem;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+form {
+  width: 25rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+form input {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    width: 15rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+form input,
+form button {
+  border: none;
+  outline: none;
+  background-color: var(--mainwhite);
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+form button {
+  border: none;
+  color: var(--primeycoler);
+  cursor: pointer;
+  transition: var(--mainTransition);
+}
+
+form button:hover {
+  background-color: var(--primeycoler);
+  color: var(--mainwhite);
+}
+
+.todo {
+  background-color: var(--secondarycolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.3rem 0;
+  transition: all 0.3s ease;
+}
+
+.todo li {
+  flex: 1;
+  font-weight: bold;
+}
+
+.todo span {
+  display: block;
+  padding: 0.3rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.fa-check-square {
+  color: var(--primeycoler);
+}
+
+.fa-trash-alt {
+  color: var(--mainRed);
+}
+
+.copmleted {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+select {
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+  color: var(--primeycoler);
+}
+
+.select {
+  margin-left: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  width: 8rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  color: var(--primeycoler);
+  pointer-events: none;
+}
