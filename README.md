@@ -6,12 +6,12 @@ in this project, Practice JS and Local Storage
 ![](./p-main.png)
 
 <br>
-## About The Project
+# About The Project
  - Store a data in Local storage
- - and remove and add bay js to domin
+ - and remove and add by js to domin
  
  <br>
- ## Built with
+ # Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -20,5 +20,5 @@ in this project, Practice JS and Local Storage
 - Java Script
 
 <br>
-## Links
+# Links
  - Live site URL : ......
