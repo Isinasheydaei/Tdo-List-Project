@@ -6,7 +6,7 @@ in this project, Practice JS and Local Storage
 ![](./p-main.png)
 
 <br>
-<b> About The Project<b/>
+ # About The Project
  - Store a data in Local storage
  - and remove and add by js to domin
  
