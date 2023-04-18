@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sitodolist</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Css.css" />
+  </head>
+  <body>
+    <!-- ----------------- start navbar----------------- -->
+    <nav class="nav-main nav-contener">
+      <div class="nav-homebar">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-calendar-days"></i>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="nav-userbar">
+        <i class="fa-solid fa-user"></i>
+        <span>sign in</span>
+      </div>
+    </nav>
+    <!-- ---------------- end navbar ------------------ -->
+    <section class="meain-container">
+      <header>
+        <h1 class="main-Title">TO DO LIST</h1>
+      </header>
+      <section class="container">
+        <div class="form-container">
+          <form>
+            <input type="text" class="todo-input" />
+            <button class="todo-button" type="submit">
+              <i class="fa-solid fa-circle-plus"></i>
+            </button>
+          </form>
+          <div class="select">
+            <select class="filter-todos" name="todos">
+              <option value="all">all</option>
+              <option value="copmleted">completed</option>
+              <option value="uncompleted">uncompleted</option>
+            </select>
+          </div>
+        </div>
+        <div class="todo-container">
+          <ul class="todolist"></ul>
+        </div>
+      </section>
+      <script src="./JS.js"></script>
+    </section>
+  </body>
+</html>
